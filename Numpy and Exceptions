@@ -1,0 +1,21 @@
+import numpy as np
+
+np.random.seed(0)
+r = np.arange(12).reshape((4,3))
+s = np.arange(12).reshape((4,3))*0.5
+
+##add the two arrays together using vectorization
+r + s
+
+##Create a 10 x 10 array x of random integers between 1 (inclusive) and 100 (inclusive)
+x = np.random.randint(1, 101, (10, 10))
+
+##Create a 10 x 10 array y of integers from 100 (inclusive) to 1 (inclusive)
+y = np.arange(1,101)[::-1].reshape(10,10)
+
+##all the values that are in the first 5 rows and the last 5 columns
+x_top_right = x[:5, -5:]
+y_bottom_left = y[-5:, :-5]
+
+##dot product of x_top_right and y_bottom_left
+np.dot(x_top_right, y_bottom_left)
