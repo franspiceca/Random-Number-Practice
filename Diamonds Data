@@ -6,4 +6,3 @@ import seaborn as sns
 from seaborn import load_dataset
 df = load_dataset("diamonds")
 df.head()
-
