@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib as plt
+
+#Random seed a number for recreation
+np.random.seed(0)
+
+#Initalizing random numbers
+random_numbers = np.empty(100000)
+
+#Loop over 100,000 times
+for i in range(100000):
+    random_numbers[i] = np.random.random()
+
+#Plot histogram with random numbers to see probability
+random_hist = plt.hist(random_numbers)
