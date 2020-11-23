@@ -13,3 +13,4 @@ for i in range(100000):
 
 #Plot histogram with random numbers to see probability
 random_hist = plt.hist(random_numbers)
+plt.show()
